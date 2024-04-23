@@ -7,7 +7,7 @@ import rightArrow from "../../../../images/arrow-right.svg";
 const Home = () => {
   return (
     <div>
-      <div className="flex items-center justify-center">
+      <div className="flex gap-5 items-center justify-center">
         <img src={digitalMission} alt="digitalMission" />
         <img src={parchaaABDM} alt="parchaaABDM" />
       </div>
@@ -15,7 +15,7 @@ const Home = () => {
         Parchaa is now ABDM compliant
       </div>
       <div className="text-[#6B7280] my-4 text-base font-normal">
-        Experience flawless healthcare possibilities with Parchaa and{" "}
+        Experience flawless healthcare possibilities with Parchaa and
         <div className="text-[#6B7280] text-base font-normal">
           Ayushman Bharat Digital Mission (ABDM) seamlessly integrated.
         </div>

@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import parchaaLogo from "../../../../images/parchaa.svg";
+import useLogin from "./hooks/useLogin";
 
 const Login = ({ setIsLogin = () => {}, setIsResetPassword = () => {} }) => {
   const [formData, setFormData] = useState({ email: "", password: "" });
@@ -8,10 +9,7 @@ const Login = ({ setIsLogin = () => {}, setIsResetPassword = () => {} }) => {
     const { name, value } = e.target;
     setFormData((prev) => ({ ...prev, [name]: value }));
   };
-  const handleSubmit = (e) => {
-    e.preventDefault();
-    console.log(formData, "formadata");
-  };
+  const { handleSubmit } = useLogin({ formData });
 
   const userDetails = {
     emailError: "",
